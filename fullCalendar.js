@@ -21,7 +21,7 @@ class FullCalendar {
         const divYear = document.createElement('div')
         divYear.innerHTML = `
             <button class="left">&lt;</button>
-            <h2>${this.date.getFullYear()}</h2>
+            <h2></h2>
             <button class="right">&gt;</button>
         `
         div.prepend(divYear)
