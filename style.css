@@ -1,0 +1,72 @@
+.calendar {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.calendar h3, .calendar h4 {
+    margin: 0;
+}
+
+.calendar ul {
+    list-style: none;
+    padding: 0;
+}
+.month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.year {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items:flex-end;
+}
+.dayNames>ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.dayNames li {
+    width: 40px;
+}
+.listNumOfDays>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.listNumOfDays>ul>li {
+    width: 40px;
+    text-align: center;
+}
+.listNumOfDays>ul>li.active {
+    border: 1px solid black;
+}
+.listNumOfDays li:nth-child(7n), .listNumOfDays li:nth-child(7n-1) {
+    font-weight: bold;
+}
+.fullCalendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 30px;
+}
+.fullCalendar button {
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+.fullCalendar>:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
